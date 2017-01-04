@@ -11,25 +11,44 @@
 
 
 /*
-name, property, age, occupation, # of dependencies, pets (make thisa boolean), cars (make this an int)
-
+make only 2 CRUDs one for users and admin, create users (tenant) under admin and have the admin take out ability of users
 */
-
 
 
 /*
 Address, notes
 
-subcat: houses					subcat: apartments
-rent							number
-sq ft							rent
-max occ							sq ft
-utilities						max occ
-#tenants						utilities
-allows pets? (boolean)			#tenants
-parking (integer)				allows pets?(boolean)
-								parking(integer)
-*/
 
+rent
+rental type: apartment or house; use relational tables
+ maintenance
+sq ft
+max occ
+utilities
+#tenants
+allows pets? (boolean)
+ maintenance requirement
+
+*/
+//have the admin create users and give them an id (primary id) and password, then enter in which complex they are a part of and have
+    //the other info connect with that property location (rent, sq ftage ecta)
+
+
+    //how exactly to start a database in intellij????????
+    //how to store users in intellij???
+    //webstorm javascript??
 public class Tenant {
+
+    int flatRent1;
+    int flatRent2;
+    double sqFt;
+    int maxOccp;
+    int cars;
+
+    boolean pets = true;
+    double tax1; //use this?? sure it would show different computation
+    double tax2;
+
+
+    int numberHouse;
 }
